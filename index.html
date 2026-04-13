@@ -6,6 +6,7 @@
   <title>NOTE VS / SMART NOTE TAKING APP</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -13,6 +14,7 @@
     <h2 class="mr-auto text-3xl" style="letter-spacing: 4px;">NOTEVS</h2>
     <a href="#">Home</a>
     <a href="#features">Features</a>
+    <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
      <a href="https://play.google.com/store/apps/details?id=com.notevs.app" class="ml-auto py-2 px-4 abtn">Download App</a>
   </nav>
@@ -59,6 +61,31 @@
     </div>
   </section>
 
+  <section id="faq" class="h-fit p-8 max-w-screen flex flex-col justify-center items-center text-white">
+
+      <h1 class="text-4xl text-white text-center mb-4">FREQUENTLY ASKED QUESTIONS</h1>
+
+    <div class="h-full w-8/12 flex flex-col justify-center items-center mt-12">
+        <div class="cursor-pointer w-full flex flex-col justify-start items-start">
+          <h3 class="question bg-white text-black w-full p-4">Which features are there in pro mode ?</h3>
+          <p class="hidden answer p-4">There are voice recording, archiving and categorizing features in pro mode.</p>
+        </div>
+
+        <div class="cursor-pointer w-full flex flex-col justify-start items-start">
+          <h3 class="question bg-white text-black w-full p-4">Where do you store notes and records ?</h3>
+          <p class="hidden answer p-4">All datas are stored in your mobile phone locally.</p>
+        </div>
+
+        <div class="cursor-pointer w-full flex flex-col justify-start items-start">
+          <h3 class="question bg-white text-black w-full p-4">Subscriptions are monthly, weekly or one time payment ?</h3>
+          <p class="hidden answer p-4">One time payment and life time service</p>
+        </div>
+
+       
+    </div>
+
+  </section>
+
     <footer id="contact" class="text-white h-screen max-w-screen flex justify-center items-center">
 
     <div class="footerdivs h-full w-10/12 grid grid-cols-3">
@@ -86,4 +113,14 @@
 
 
 </body>
+
+<script>
+
+  $(document).ready(function() {
+    $(".question").click(function() {
+        $(this).next(".answer").toggleClass("hidden");
+    })
+  })
+
+</script>
 </html>
