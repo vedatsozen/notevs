@@ -42,4 +42,19 @@ p.info {
 .featuresdivs > div > img {
     border-radius: 7px;
     box-shadow: 0 0 10px rgb(48, 47, 47);
+    animation: imganim infinite 2s;
+}
+
+@keyframes imganim {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+     100% {
+        transform: translateY(0px);
+    }
 }
