@@ -1,3 +1,6 @@
+
+
+
 :root {
     --renk1: #FF101F;
     --renk2:#B2DDF7;
@@ -6,6 +9,18 @@
 
 body {
     background-color: var(--renk1);
+}
+
+nav#acilirmenu {
+    background-color: var(--renk2);
+    color:var(--renk1);
+    transition:all 0.3s ease-in-out;
+}
+
+nav#acilirmenu > a:hover {
+    background-color:var(--renk1);
+    color:var(--renk2);
+    transition:all 0.3s ease-in-out;
 }
 
 nav > h1 {
