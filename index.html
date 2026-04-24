@@ -1,133 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOTE VS / SMART NOTE TAKING APP</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTEVS - SMART NOTE TAKING APP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
 
-  <h2 class="p-10 z-50 bg-black text-white w-full fixed top-0 left-1/2 -translate-x-1/2 block md:hidden text-3xl text-white text-center" style="letter-spacing: 4px;">NOTEVS</h2>
+<body class="max-w-screen overflow-x-hidden">
 
-  <nav class="z-50 px-20 fixed h-20 w-screen top-0 left-0 bg-black text-white hidden md:flex flex-row justify-center items-center gap-8">
-    <h2 class="mr-auto text-3xl" style="letter-spacing: 4px;">NOTEVS</h2>
-    <a href="#">Home</a>
-    <a href="#features">Features</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-     <a href="https://play.google.com/store/apps/details?id=com.notevs.app" class="ml-auto py-2 px-4 abtn">Download App</a>
-  </nav>
+<nav class="text-2xl font-bold hidden fixed top-0 left-0 h-20 w-screen md:flex flex-row justify-center items-center gap-8">
+  <a href="#">Home</a>
+  <a href="#whatappdo">What App Do ?</a>
+  <a href="#faq">Faq</a>
+</nav>
 
-  <header class="p-20 md:p-0 h-screen max-w-screen flex flex-row justify-center items-center text-white">
-    <div class="h-full w-1/2 flex flex-col justify-center items-center gap-8">
-    <h1 class="text-4xl md:text-6xl font-bold text-center">Smart<br> Note Taking App</h1>
-    <p class="text-xs md:text-xl">Write your notes and add your voices to your notes</p>
-    <p class="info text-xs p-2 ">All happens in your mobile phone. No database in cloud.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.notevs.app" class="abtn py-2 px-4">Download App</a>
-    </div>
-    <div class="h-full w-1/2 flex justify-center items-center p-0">
-      <video src="video.mp4" class="h-[70%] w-fit border-2 border-white rounded-2xl" autoplay muted loop></video>
-    </div>
-  </header>
+<header class="h-screen w-screen flex justify-center items-center">
 
-  <section id="features" class=" min-h-screen max-w-screen flex flex-col justify-center items-center">
-  <h1 class="text-4xl text-white text-center mb-4">FEATURES</h1>
-    <div class="featuresdivs h-4/6 w-10/12 grid grid-cols-1 md:grid-cols-3 text-center">
-      <div class="p-4 flex flex-col justify-center items-center gap-4">
-        <h2 class="text-white text-3xl">Take your notes. Write or Record</h2>
-        <img src="imgs/ss/s1.png" class="h-5/6">
-      </div>
-      
-        <div class="p-4 flex flex-col justify-center items-center gap-8">
-        <h2 class="text-white text-3xl">Bookmark your notes</h2>
-        <img src="imgs/ss/s2.png" class="h-5/6">
-      </div>
+<div class="headerorta w-8/12 md:w-10/12 flex flex-col justify-center items-center gap-4">
 
-        <div class="p-4 flex flex-col justify-center items-center gap-8">
-        <h2 class="text-white text-2xl">Pro mode has many features</h2>
-        <img src="imgs/ss/s3.png" class="h-5/6">
-      </div>
+      <h1 class="text-center font-bold text-4xl md:text-6xl">Smart Note Taking App</h1>
+      <p class="text-center text-normal">You can add voice, photo to your notes. You can categorize and archive them. You can set alarms.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.notevs.app" target="_blank" rel="noopener" class="btn mt-8">Download App</a>
 
-        <div class="p-4 flex flex-col justify-center items-center gap-8">
-        <h2 class="text-white text-2xl">Take your notes. Write or Record</h2>
-        <img src="imgs/ss/s4.png" class="h-5/6">
-      </div>
+</div>
 
-        <div class="p-4 flex flex-col justify-center items-center gap-8">
-        <h2 class="text-white text-2xl">Add Categories to your notes</h2>
-        <img src="imgs/ss/s5.png" class="h-5/6">
-      </div>
+</header>
 
-        <div class="p-4 flex flex-col justify-center items-center gap-8">
-        <h2 class="text-white text-2xl">Archive your notes</h2>
-        <img src="imgs/ss/s6.png" class="h-5/6">
-      </div>
-    </div>
-  </section>
+<section id="whatappdo" class="h-screen w-screen flex justify-center items-center py-20">
 
-  <section id="faq" class="h-fit p-8 max-w-screen flex flex-col justify-center items-center text-white">
+<video autoplay muted loop class="w-8/12 h-4/5 md:w-6/12 rounded-lg">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-      <h1 class="text-4xl text-white text-center mb-4">FREQUENTLY ASKED QUESTIONS</h1>
-
-    <div class="h-full w-11/12 md:w-8/12 flex flex-col justify-center items-center mt-12">
-        <div class="cursor-pointer w-full flex flex-col justify-start items-start">
-          <h3 class="question bg-white text-black w-full p-4">Which features are there in pro mode ?</h3>
-          <p class="hidden answer p-4">There are voice recording, archiving and categorizing features in pro mode.</p>
-        </div>
-
-        <div class="cursor-pointer w-full flex flex-col justify-start items-start">
-          <h3 class="question bg-white text-black w-full p-4">Where do you store notes and records ?</h3>
-          <p class="hidden answer p-4">All datas are stored in your mobile phone locally.</p>
-        </div>
-
-        <div class="cursor-pointer w-full flex flex-col justify-start items-start">
-          <h3 class="question bg-white text-black w-full p-4">Subscriptions are monthly, weekly or one time payment ?</h3>
-          <p class="hidden answer p-4">One time payment and life time service</p>
-        </div>
-
-       
-    </div>
-
-  </section>
-
-    <footer id="contact" class="text-white h-screen max-w-screen flex justify-center items-center">
-
-    <div class="footerdivs h-full w-10/12 grid grid-cols-1 md:grid-cols-3">
-
-        <div class="h-4/5 flex flex-col justify-center items-center text-center p-8 gap-4">
-          <h3 class="text-3xl">NOTEVS / Smart Note Taking App</h3>
-          <p>Write your notes and add your voices to your notes</p>
-        </div>
-
-        <div class="h-4/5 flex flex-col justify-center items-center gap-8">
-         <a href="#">Home</a>
-         <a href="#features">Features</a>
-         <a href="#contact">Contact</a>
-        </div>
-       
-
-        <div class="h-4/5 flex flex-col justify-center items-center">
-          <a href="https://play.google.com/store/apps/details?id=com.notevs.app" class="abtn py-2 px-4">Download App</a>
-        </div>
-       
-       
-    </div>
-  </footer>
-
-
+</section>
 
 </body>
-
-<script>
-
-  $(document).ready(function() {
-    $(".question").click(function() {
-        $(this).next(".answer").toggleClass("hidden");
-    })
-  })
-
-</script>
 </html>

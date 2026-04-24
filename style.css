@@ -1,65 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-html {
-    user-select: none;
+:root {
+    --renk1: #FF101F;
+    --renk2:#B2DDF7;
+    --renk3:#4CB5AE;
 }
 
 body {
-    background-color:black;
+    background-color: var(--renk1);
 }
 
 nav > a {
-    letter-spacing: 5px;
+    color: var(--renk2);
 }
 
-h1 {
-    color: #ff5757;
+.headerorta {
+    color:var(--renk2);
 }
 
-a.abtn {
-    background-color: #ff5757 !important;
-    color:white !important;
-    border-radius: 5px;
-    box-shadow: 0 0 10px black;
+a.btn {
+    border:2px solid var(--renk2);
+    padding:6px 8px;
+    border-radius:5px;
+    letter-spacing: 4px;
 }
 
-a.abtn:hover {
-    background-color: #c01a1a !important;
-}
-
-a:active {
-    transform: scale(0.95) !important;
-}
-
-p.info {
-    background-color:grey;
-    color: lightgrey;
-}
-
-#features, #faq {
-    scroll-margin-top: 100px;
-}
-
-.featuresdivs > div > img {
-    border-radius: 7px;
-    box-shadow: 0 0 10px rgb(48, 47, 47);
-    animation: imganim infinite 2s;
-}
-
-@keyframes imganim {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-
-     100% {
-        transform: translateY(0px);
-    }
+a.btn:hover {
+    background-color: var(--renk2);
+    color:var(--renk1);
+    cursor:pointer;
 }
