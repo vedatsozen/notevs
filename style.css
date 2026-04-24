@@ -8,7 +8,15 @@ body {
     background-color: var(--renk1);
 }
 
-nav > a {
+nav > h1 {
+    letter-spacing:4px;
+}
+
+h1.notevs {
+    color:var(--renk2);
+}
+
+nav {
     color: var(--renk2);
 }
 
