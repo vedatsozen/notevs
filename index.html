@@ -14,8 +14,6 @@
 
 <i class="bi bi-list text-white text-4xl fixed top-6 right-6 cursor-pointer md:hidden z-50" id="hamburger"></i>
 
-
-
 <nav id="acilirmenu" class="flex flex-col justify-center items-center md:hidden fixed top-0 -left-full w-8/12 text-xl">
 
 <a href="#" class="h-16 w-full flex justify-start items-center pl-4 py-1">Home</a>
@@ -36,17 +34,21 @@
   </script>
 
 <nav class="text-2xl font-bold hidden fixed top-0 left-0 h-20 w-screen md:flex flex-row justify-center items-center">
+
   <h1 class="mr-auto ml-12 text-4xl">NOTEVS</h1>
-  <div class="absolute left-1/2 -translate-x-1/2 flex flex-row justify-center items-center gap-8">
+
+  <div class="shadow-lg shadow-black absolute left-1/2 -translate-x-1/2 flex flex-row justify-center items-center gap-8 py-4 px-8">
   <a href="#">Home</a>
   <a href="#whatappdo">What App Do ?</a>
   <a href="#faq">Faq</a>
   </div>
+
+
 </nav>
 
-<header class="h-screen w-screen flex justify-center items-center">
+<header class="h-[800px] md:h-screen w-screen flex flex-col md:flex-row justify-center items-center">
 
-<div class="headerorta w-8/12 md:w-6/12 flex flex-col justify-start items-start pl-20 gap-8">
+<div class="headerorta w-8/12 md:w-6/12 flex flex-col justify-center md:justify-start items-center md:items-start pl-0 md:pl-20 gap-8">
 
 
 
@@ -54,7 +56,7 @@
 
       <p class="text-normal">You can add voice, photo to your notes. You can categorize and archive them. You can set alarms.</p>
   
-    <a href="https://play.google.com/store/apps/details?id=com.notevs.app" target="_blank" rel="noopener" class="btn mt-8">Download App</a>
+    <a href="https://play.google.com/store/apps/details?id=com.notevs.app" target="_blank" rel="noopener" class="downloadbtn mt-8">Download App</a>
       
 </div>
 
@@ -71,11 +73,87 @@
 
 </header>
 
-<section id="whatappdo" class="h-screen w-screen flex justify-center items-center py-20">
+<section id="whatappdo" class="m-auto text-white h-fit w-10/12 grid grid-cols-1 md:grid-cols-4 py-20">
 
+<div class="h-[500px] flex flex-col justify-between items-center gap-4 p-8">
+  <h2 class="text-center text-2xl">You can take notes classically by texting</h2>
+  <img src="imgs/ss/S4.PNG" class="h-[350px] w-auto" alt="Screenshot 1">
+</div>
 
+<div class="h-[500px] flex flex-col justify-between items-center gap-4 p-8">
+  <h2 class="text-center text-2xl">You can add voice photo to your notes.</h2>
+  <img src="imgs/ss/S1.PNG" class="h-[350px] w-auto" alt="Screenshot 2">
+</div>
+
+<div class="h-[500px] flex flex-col justify-between items-center gap-4 p-8">
+  <h2 class="text-center text-2xl">You can take favourite your notes</h2>
+  <img src="imgs/ss/S2.PNG" class="h-[350px] w-auto" alt="Screenshot 2">
+</div>
+
+<div class="h-[500px] flex flex-col justify-between items-center gap-4 p-8">
+  <h2 class="text-center text-2xl">You can categorize your notes.</h2>
+  <img src="imgs/ss/S5.PNG" class="h-[350px] w-auto" alt="Screenshot 2">
+</div>
+
+<div class="h-[500px] flex flex-col justify-between items-center gap-4 p-8">
+  <h2 class="text-center text-2xl">You can archive your notes.</h2>
+  <img src="imgs/ss/S6.PNG" class="h-[350px] w-auto" alt="Screenshot 2">
+</div>
+
+<div class="h-[500px] flex flex-col justify-between items-center gap-4 p-8">
+  <h2 class="text-center text-2xl">You can set alarms</h2>
+  <img src="imgs/ss/S7.PNG" class="h-[350px] w-auto" alt="Screenshot 2">
+</div>
 
 </section>
+
+<section id="faq" class="m-auto text-white h-screen w-10/12 flex flex-col justify-center items-center gap-8">
+
+<h1 class="text-4xl font-bold">Frequently Asked Questions</h1>
+
+<div class="w-full flex flex-col justify-start items-start gap-4">
+
+  <h2 class="question text-2xl font-bold">Is the app free to use? <i class="font-bold bi bi-plus-lg text-2xl"></i> </h2>
+  <p class="text-lg hidden answer bg-white text-red-500 p-4">You can use pro mode 7 days as free trial. And, Pro Mode is 2.99$ for monthly and 19.99$ for life time.</p>
+
+
+  <h2 class="question text-2xl font-bold">Which features can i use in pro mode <i class="font-bold bi bi-plus-lg text-2xl"></i> </h2>
+  <p class="answer text-lg hidden bg-white text-red-500 p-4">You can add notes. You can add voice and photo to your notes. You can categorize and archive your notes. You can set alarms too.</p>
+
+  <h2 class="question text-2xl font-bold">Does our data store in cloud ? <i class="font-bold bi bi-plus-lg text-2xl"></i> </h2>
+  <p class="answer text-lg hidden bg-white text-red-500 p-4">No, All datas are stored in your mobile phone.</p>
+
+</div>
+</section>
+
+<section id="footer" class="text-white h-fit w-screen grid grid-cols-1 md:grid-cols-3">
+  
+  <div class="flex flex-col justify-center items-center gap-4 p-8">
+    <h2 class="text-4xl font-bold">NOTEVS</h2>
+    <p class="text-normal text-center">Smart note app that you can take notes by texting, recording. You can add photos to your notes, categorize and archive too.
+    </div>
+
+   <div class="flex flex-col justify-center items-center gap-4 p-8">
+    <a href="#">Home</a>
+  <a href="#whatappdo">What App Do ?</a>
+  <a href="#faq">Faq</a>
+    </div>
+
+     <div class="flex flex-col justify-center items-center gap-4 p-8">
+    <h2 class="text-2xl font-bold">Contact Us</h2>
+    <p class="text-lg"><a href="mailto:vedatsozen@gmail.com">vedatsozen@gmail.com</a></p>
+    </div>
+
+
+<script>
+  // Smooth scrolling for anchor links
+  $(document).ready(function() {
+    $(".question").click(function() {
+      $(this).next("p").toggleClass("hidden");
+      $(this).find("i").toggleClass("bi-plus-lg bi-dash-lg");
+    });   
+  });
+</script>
 
 </body>
 </html>

@@ -1,5 +1,6 @@
-
-
+html {
+    user-select: none;
+}
 
 :root {
     --renk1: #FF101F;
@@ -31,7 +32,14 @@ h1.notevs {
     color:var(--renk2);
 }
 
-nav {
+nav > div {
+background-color: var(--renk2);
+color: var(--renk1);
+border-radius: 5px;
+border: none;
+}
+
+nav > h1 {
     color: var(--renk2);
 }
 
@@ -39,15 +47,27 @@ nav {
     color:var(--renk2);
 }
 
-a.btn {
+a.downloadbtn {
     border:2px solid var(--renk2);
     padding:6px 8px;
     border-radius:5px;
     letter-spacing: 4px;
 }
 
-a.btn:hover {
+a.downloadbtn:hover {
     background-color: var(--renk2);
     color:var(--renk1);
     cursor:pointer;
+}
+
+#whatappdo > div > img {
+    box-shadow: 0 0 20px black;
+}
+
+.question {
+    cursor: pointer;
+}
+
+.answer {
+    transition: all 0.5s ease-in-out;
 }
